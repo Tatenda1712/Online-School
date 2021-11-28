@@ -1,0 +1,267 @@
+/*Global Css*/
+
+.navbar{
+    background:rgb(2, 1, 44);
+    padding: 0 !important;
+}
+.navbar-nav li a{
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/*Banner Section*/
+#banner-area{
+    background:rgb(2, 1, 44);
+    color: #fff;
+    padding-top: 5%;
+}
+.promo-title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+#banner a{
+    color: #fff;
+    text-decoration: none;
+}
+.shop-now{
+    background:#00A5c4;
+}
+.shopp-now{
+    color: white;
+}
+.card-body{
+    border: 2px solid rgb(2, 1, 44);
+    width: 100%;
+    
+}
+
+/*Flip Cards*/
+
+.thecard{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    background-color:rgb(37, 37, 105);
+    box-shadow:0 0 3px whitesmoke, 0 0 5px whitesmoke;
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+
+}
+
+.result{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(37, 37, 105);
+    box-shadow:0 0 3px whitesmoke, 0 0 5px whitesmoke;
+}
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #333;
+    top: 30%;
+}
+.front{
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    position: relative;
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    backface-visibility: hidden;
+    color: #333;
+    transform: rotateY(180deg);
+}
+
+
+/*Services Section*/
+#services{
+    padding: 80px 0;
+
+}
+.service-img{
+    width: 100px;
+    margin-top: 20px;
+}
+.services{
+    transition: 1s;
+}
+.services h4{
+    padding: 5px;
+    margin-top: 25px;
+    text-transform: uppercase;
+}
+
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border:none;
+    border-radius: 20px;
+    background-color:rgb(2, 1, 44);
+
+}
+
+/*Testimonial section*/
+
+.testimonials{
+    border-left: 4px solid rgb(2, 1, 44);
+
+}
+.testimonials img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user-details{
+    display: inline-block;
+    font-size: 12px;
+
+}
+.services:hover{        
+    z-index: 2;
+}
+.title::before{
+    content: '';
+    background: rgb(2, 1, 44);
+    height: 5px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+}
+.title::after{
+    content: '';
+    background: rgb(2, 1, 44);
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    display: block;
+    transform: translateY(8px);
+}
+.social-icons img{
+    width: 60px;
+    transition:0.5s;
+}
+.social-icons a:hover img{
+   transform: translateY(-10px);
+}
+
+
+/*Top Sale*/
+/*
+#top-sale, .owl-carousel, .item, .product a{
+    overflow: hidden;
+}
+#top-sale, .owl-carousel, .item, .product .img-top {
+    transition: transform .5s ease;
+}
+#top-sale, .owl-carousel, .item, .product, .img-top:hover{
+    transform:scale(1.025);
+}
+*/
+.owl-carousel .owl-nav button{
+    position: absolute;
+    top: 15%;
+    outline: none;
+}
+.owl-carousel .owl-nav button.owl-prev{
+   left: 0;
+
+}
+.owl-carousel .owl-nav button.owl-prev span{
+    font-size: 50px;
+    color:red;
+    margin-left: -4rem;
+    padding: 0 1rem;
+}
+.owl-carousel .owl-nav button.owl-next{
+    right: 0;
+ }
+ .owl-carousel .owl-nav button.owl-next span{
+    font-size: 50px;
+    color:red;
+    margin-right: -4rem;
+    padding: 0 1rem;
+ }
+
+ /*Special Price*/
+ #special-price, .grid, .grid-item{
+     margin-right: 1.2rem;
+     margin-top: 1rem;
+ }
+ #exam{
+    margin: 0 auto;
+     width: 40%;
+ }
+ .question1{
+    height:87%;
+     width:100%;
+     overflow-y: scroll;
+ }
+ .answerr{
+    background: rgb(2, 1, 44);
+     width: 100%;
+      height: 87%;
+       border: none;
+ }
+ 
+ @media screen and (max-width:1120px){
+    .question1{
+        height:8%;
+        overflow-y:scroll ;
+    }
+    .answerr{
+        height: 70%;
+    }
+} 
+ 
+ @media screen and (max-width:1110px){
+    .question1{
+        height:85%;
+        overflow-y:scroll ;
+    }
+    .answerr{
+        height: 70%;
+    }
+} 
+ @media screen and (max-width:1070px){
+    .question1{
+        height:77%;
+        overflow-y:scroll ;
+    }
+    .answerr{
+        height: 70%;
+    }
+} 
+
+
+
+@media screen and (max-width:995px){
+    .question1{
+        height:71%;
+        overflow-y:scroll ;
+    }
+    .answerr{
+        height: 70%;
+    }
+}   
+  
+ @media screen and (max-width: 480px) {
+    #exam{
+        width: 90%;
+    }
+  }
